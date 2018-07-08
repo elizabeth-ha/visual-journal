@@ -3,12 +3,23 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu:300,400|Overpass:200" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Visual Journal</title>
   </head>
   <body>
-    <button onclick="test()">test</button>
-    <div id="demo"></div>
-    <textarea id="journal"></textarea>
-    <button id="send" onclick="parseInput()">send</button>
+    <h1>Visual Journal</h1>
+    <!-- <button onclick="test()">test</button>
+    <div id="demo"></div> -->
+    <div id="input" class="display">
+      <textarea id="journal"></textarea>
+      <button id="send" onclick="test()">send</button>
+    </div>
+    <div id="output">
+      <div id="journal-text"></div>
+      <div id="table-cont">
+      </div>
+    </div>
     <div id="demo2"></div>
   </body>
 </html>
